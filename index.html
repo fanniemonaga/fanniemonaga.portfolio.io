@@ -366,6 +366,7 @@
         .port-card:hover .port-media img {
             transform: scale(1.09) translateZ(0);
         }
+
         .port-overlay {
             position: absolute;
             inset: 0;
@@ -433,6 +434,7 @@
             transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             box-shadow: 0 4px 14px rgba(0,0,0,0.25);
             pointer-events: auto;
+            text-decoration: none;
         }
         .port-card:hover .port-link {
             opacity: 1;
@@ -443,7 +445,6 @@
             color: white;
             transform: scale(1.1);
         }
-
         #about { background: var(--cream); }
         .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; margin-top: 4rem; }
         .about-sticky { position: sticky; top: 120px; }
@@ -571,7 +572,7 @@
             <div class="hero-right-overlay">
                 <div class="hero-stats">
                     <div>
-                        <div class="hero-stat-num">4+</div>
+                        <div class="hero-stat-num">5+</div>
                         <div class="hero-stat-label">Projects built</div>
                     </div>
                     <div>
@@ -587,7 +588,6 @@
         </div>
     </section>
 
-    <!-- Updated Skills Section (6 skills) -->
     <section id="skills">
         <div class="section-label">What I do</div>
         <h2 class="section-heading">Core <em>Skills</em></h2>
@@ -598,35 +598,30 @@
                 <h3 class="skill-title">Front-end Development</h3>
                 <p class="skill-desc">Proficient in HTML, CSS, JavaScript, and modern frameworks like React. Building responsive, accessible, and performant user interfaces that work beautifully across devices.</p>
             </div>
-
             <div class="skill-block reveal">
                 <div class="skill-num">02</div>
                 <div class="skill-icon-wrap"><i class="fa-solid fa-server"></i></div>
                 <h3 class="skill-title">Back-end Development</h3>
                 <p class="skill-desc">Skilled in Node.js + Express for building scalable APIs and server logic. Comfortable with RESTful services and integrating databases (MySQL, MongoDB basics).</p>
             </div>
-
             <div class="skill-block reveal">
                 <div class="skill-num">03</div>
                 <div class="skill-icon-wrap"><i class="fa-solid fa-mobile-screen"></i></div>
                 <h3 class="skill-title">Mobile App Development</h3>
                 <p class="skill-desc">Developing cross-platform mobile apps using React Native. Creating smooth, native-feeling experiences for iOS and Android from a single codebase.</p>
             </div>
-
             <div class="skill-block reveal">
                 <div class="skill-num">04</div>
                 <div class="skill-icon-wrap"><i class="fa-solid fa-code-branch"></i></div>
                 <h3 class="skill-title">TypeScript & Modern JS</h3>
                 <p class="skill-desc">Using TypeScript to write safer, more maintainable code in both front-end (React) and back-end (Node.js) projects. Strong grasp of ES6+ features, async/await, and modular code.</p>
             </div>
-
             <div class="skill-block reveal">
                 <div class="skill-num">05</div>
                 <div class="skill-icon-wrap"><i class="fa-solid fa-link"></i></div>
                 <h3 class="skill-title">API Development & Integration</h3>
                 <p class="skill-desc">Designing and consuming REST APIs, handling authentication (JWT), data fetching, and basic GraphQL queries. Experienced in connecting front-end to back-end seamlessly.</p>
             </div>
-
             <div class="skill-block reveal">
                 <div class="skill-num">06</div>
                 <div class="skill-icon-wrap"><i class="fa-solid fa-cloud"></i></div>
@@ -644,6 +639,27 @@
             </div>
         </div>
         <div class="portfolio-grid">
+
+            <!-- DevPortfolio Builder -->
+            <div class="port-card reveal" style="--aspect: 4 / 3;">
+                <div class="port-media">
+                    <img src="devportfolio-preview.png" alt="DevPortfolio Builder" style="object-fit: contain; object-position: center; background: #0a0a14;">
+                </div>
+                <div class="port-overlay">
+                    <div class="port-tags">
+                        <span class="port-tag">React</span>
+                        <span class="port-tag">Node.js</span>
+                        <span class="port-tag">SQLite</span>
+                        <span class="port-tag">Vercel</span>
+                    </div>
+                    <h3 class="port-title">DevPortfolio Builder</h3>
+                    <p class="port-excerpt">Full-stack SaaS — generate & host developer portfolios instantly</p>
+                </div>
+                <a href="https://dev-portfolio-builder-u7dz.vercel.app/" class="port-link" target="_blank" rel="noopener">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
             <div class="port-card reveal" style="--aspect: 4 / 3;">
                 <div class="port-media">
                     <img src="translator.png" alt="Language Translator">
@@ -709,6 +725,7 @@
                 </div>
                 <a href="#" class="port-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
+
         </div>
     </section>
 
